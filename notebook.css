@@ -1,0 +1,82 @@
+*,
+html {
+  box-sizing: border-box;
+}
+body {
+  background-color: #feadad;
+}
+h1 {
+  color: whitesmoke;
+  text-decoration: underline;
+  text-shadow: 2px 1px 2px #000, 3px 2px #000;
+  text-align: center;
+}
+
+.notebook-header {
+  max-width: 400px;
+  height: 40px;
+  margin: 100px auto 0 auto;
+  padding-top: 10px;
+  background: linear-gradient(to bottom, rgb(7, 65, 49), rgb(4, 249, 82));
+  /* box-shadow: inset 5px 0 5px rgb(140, 232, 117), inset -5px 0 5px #009, 1px 0 2px 1px #777, -1px -1px 2px 1px #777; */
+  border-bottom: 4px dashed #05fba9;
+  border-radius: 2px;
+  text-align: center;
+}
+.notebook-header:after {
+  content: "Design";
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 0 0 3px #000;
+}
+.notebook-header-end {
+  max-width: 400px;
+  height: 5px;
+  margin: auto;
+  /* background-color: rgb(117, 215, 47); */
+  /* box-shadow: 1px 0 2px 1px #777, -1px 0 2px 1px #777; */
+}
+
+.page {
+  max-width: 400px;
+  height:60vh;
+  margin: auto;
+  padding-left: 40px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 2px 1px #777, -1px 0 2px 1px #777;
+  border-radius: 2px;
+  flex: 0 0 400px;
+}
+.page-horizontal-lines {
+  max-width: 400px;
+  height: 18.5px;
+  margin-left: -40px;
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+.page-vertical-lines {
+  position: absolute;
+  width: 4px;
+  height: 426px;
+  margin: 0 0 0 -10px;
+  border-left: 1px solid rgb(214, 25, 25);
+  border-right: 1px solid rgb(214, 25, 25);
+}
+.text-box {
+  position: absolute;
+  top: 185px;
+  left: 50%;
+  transform: translatex(-50%);
+  width: 351px;
+  height: 290px;
+  margin-left: 18px;
+  padding: 18.5px 10px 0 5px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-family: Georgia;
+  font-size: 15px;
+  line-height: 1.25;
+  resize: none;
+  overflow: auto;
+  text-align: justify;
+}
